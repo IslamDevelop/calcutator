@@ -1,0 +1,73 @@
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.root {
+    background-position-x: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(back/iphone.png);
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px;
+    position: absolute;
+    left: 762px;
+    top: 268px;
+    gap: 10px;
+}
+button {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    border-radius: 63%;
+    width: 90px;
+    height: 90px;
+    border: none;
+    font-size: 40px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    filter: contrast(0.7);
+   
+}
+.gray {
+    background-color: rgb(91, 91, 91);
+}
+.zero {
+    width: 190px;
+    grid-column: 1 / 3;
+    border-radius: 50px;
+}
+.output input {
+    background:none;
+    width: 350px;
+    height: 97px;
+    position: absolute;
+    left: 762px;
+    top: 141px;
+    border-radius: 14px;
+    color: white;
+    font-size: 60px;
+    border: none;
+    text-align: end;
+    padding-inline: 20px;
+}
+input::placeholder {
+    font-size: 60px;
+    color: white;
+}
+.orange {
+    background-color: rgb(199, 113, 8);
+}
+.number {
+    color: white;
+    font-size: 40px;
+}
