@@ -30,17 +30,26 @@ buttons.forEach(button => {
 });
 
 function numberFunction(value) {
+   
+    if (value === '.' && currentNumber.includes('.')) {
+        return
+    }
     if (currentNumber === '0' ) {
-        currentNumber = value;
-    } else {currentNumber += value;}
+        currentNumber = previousNumber} 
+        // убрана возможность ставить в начале больше одного нуля
+        currentNumber += value 
+        if (currentNumber === '.') {
+            currentNumber = `0${currentNumber}`
+        } 
+        // если первой нажимается точка, то впереди ставится ноль
+ 
 }
 
 function operatorFunction(value) {
     if (currentNumber === '') return;
-    // if (currentNumber === '.') {
-    //     currentNumber = `0${previousNumber}`
-    // }
-   
+    if (currentNumber[currentNumber.length - 1] === '.') return;
+    // перед оператором не может стоять точка
+
     if (previousNumber !== '') {
         calculate();
     }
