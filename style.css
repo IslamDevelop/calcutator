@@ -76,7 +76,7 @@ input::placeholder {
 
 @media (max-width: 440px){
     .buttons {
-        background-image: url(back/iphone3g.png);
+        background-image: url(back/appleok.png);
         grid-template-columns: repeat(4,60px);
         grid-template-rows: repeat(5, 60px);
         background-position-y:top ;
