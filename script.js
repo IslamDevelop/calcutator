@@ -10,16 +10,17 @@ const buttons = document.querySelectorAll('.btn');
 const home = document.getElementById('home');
 const div = document.querySelectorAll('.buttons')
 const icon = document.getElementById('icon')
-document.getElementsByClassName('icon')[0].style="display: none"
 
-home.addEventListener('click', function(){
+for(let i=0;i < 20; i++) {document.getElementsByClassName('btn')[i].style="display: none"}
+
+icon.addEventListener('click', function(){
     for(let i=0; i < 20; i++) {
-        document.getElementsByClassName('btn')[i].style="display: none"
-    } document.getElementsByClassName('icon')[0].style="display: block"
-    icon.addEventListener('click', function(){
+        document.getElementsByClassName('btn')[i].style="display: block"
+    } document.getElementsByClassName('icon')[0].style="display: none"
+    home.addEventListener('click', function(){
         for(let i=0; i < 20; i++) {
-            document.getElementsByClassName('btn')[i].style="display: block"
-        }document.getElementsByClassName('icon')[0].style="display: none"
+            document.getElementsByClassName('btn')[i].style="display: none"
+        }document.getElementsByClassName('icon')[0].style="display: block"
     })
 })
 
