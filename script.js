@@ -53,6 +53,9 @@ function operatorFunction(value) {
     if (previousNumber !== '') {
         calculate();
     }
+    if (value === '%') {
+        calculate()
+    }
     operator = value;
     previousNumber = currentNumber;
     currentNumber = '';
@@ -77,6 +80,9 @@ function calculate() {
             break;
         case '/':
             result = prev / curr;
+            break;
+        case '%':
+            result = prev / 100 * curr;
             break;
         default:
             return;
