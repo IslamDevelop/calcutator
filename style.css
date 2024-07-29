@@ -53,12 +53,14 @@ button {
     font-size: 40px;
     margin-top: 190px;
     box-shadow: rgb(94, 93, 93) 2px 2px 5px;
+    transition: 0.2s;
 }
 
 button:hover {
     transform: scale(1.07);
     filter: contrast(0.7);
     box-shadow: none;
+    
    
 }
 #icon {
