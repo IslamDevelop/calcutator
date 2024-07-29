@@ -58,6 +58,7 @@ button {
 button:hover {
     transform: scale(1.07);
     filter: contrast(0.7);
+    box-shadow: none;
    
 }
 #icon {
