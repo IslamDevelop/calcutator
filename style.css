@@ -52,10 +52,11 @@ button {
     border: none;
     font-size: 40px;
     margin-top: 190px;
+    box-shadow: rgb(94, 93, 93) 2px 2px 5px;
 }
 
 button:hover {
-    transform: scale(1.1);
+    transform: scale(1.07);
     filter: contrast(0.7);
    
 }
@@ -65,7 +66,7 @@ button:hover {
     position: absolute;
     width: 90px;
     height: 90px;
-  
+    
     top:  137px;
     left: 100px;
 }
@@ -119,6 +120,7 @@ input::placeholder {
     }
     button {
         
+        box-shadow: 4px 3px 11px black;
         border-radius: 63%;
         width: 60px;
         height: 60px;
